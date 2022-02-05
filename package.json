@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://igoravshtol.github.io/portfolio",
+  "homepage": "https://portfolio-iharrwe.herokuapp.com/",
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@testing-library/jest-dom": "^5.11.4",
