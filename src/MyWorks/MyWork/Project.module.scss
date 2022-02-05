@@ -1,0 +1,74 @@
+@import './src/Common/Styles/sass/variables';
+@import './src/Common/Styles/sass/mixins';
+
+.project {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  color: $textColor;
+
+  .projectImg {
+    height: 300px;
+    @include display(flex, center);
+    //display: flex;
+    //justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $bgColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+    .button {
+      position: relative;
+      top: 110px;
+      @include text(12px, 1.8, 400);
+      background-color: $primaryColor;
+      padding: 10px 20px;
+      z-index: 1;
+      transition-duration: 0.4s;
+    }
+    .button:hover {
+      background-color: #4CAF50; /* Green */
+      color: white;
+    }
+  }
+
+  .projectInfo {
+    padding: 10px ;
+    //background-color: $bgSecondColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -20px;
+
+    .description {
+      //font: 400 12px/1.8 'Poppins', sans-serif;
+      @include text(12px, 1.8, 400);
+      //font-family: 'Poppins', sans-serif;
+      //line-height: 1.8;
+      //font-weight: 400;
+      //font-size: 12px;
+      letter-spacing: 1px;
+      color: $textColor;
+
+    }
+
+  }
+
+}
+
+
+
+
+

@@ -1,0 +1,10 @@
+@import "src/Common/Styles/sass/variables.scss";
+
+.nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+  text-decoration: none;
+  position: fixed;
+}

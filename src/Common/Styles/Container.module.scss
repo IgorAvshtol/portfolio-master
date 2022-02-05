@@ -1,0 +1,11 @@
+@import './src/Common/Styles/sass/mixins';
+
+.container {
+    //border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    @include display(flex, space-around);
+    align-items: center;
+    flex-wrap: wrap;
+}

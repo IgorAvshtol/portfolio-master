@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+@mixin text($fontSize, $lineHeight, $fontWeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  font-family: $fontFamily;
+}
+
+@mixin display($display, $justifyContent) {
+  display: $display;
+  justify-content: $justifyContent;
+}

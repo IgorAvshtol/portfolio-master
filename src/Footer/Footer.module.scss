@@ -1,0 +1,25 @@
+@import './src/Common/Styles/sass/mixins';
+
+.footerBlock {
+  height: 100%;
+  background-color: #1f1f20;
+  padding: 50px 0;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    .footer {
+      width: 50%;
+      @include display(flex, space-between);
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 980px) {
+      .footer {
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "src/Common/Styles/sass/variables";
+@import "src/Common/Styles/sass/mixins";
+
+.contactBlock {
+  height: 100%;
+  background-color: $bgThirdColor;
+  padding: 50px;
+
+  .contact {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .formgroup {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      color: #fff;
+    }
+
+    & input, & textarea {
+      width: 100%;
+      text-align: center;
+    }
+    .submitBtn {
+      position: relative;
+      top: 10px;
+      @include text(12px, 1.8, 400);
+      background-color: $primaryColor;
+      padding: 10px 20px;
+      z-index: 1;
+      transition-duration: 0.4s;
+    }
+    .submitBtn:hover {
+      background-color: #4CAF50; /* Green */
+      color: white;
+    }
+    .submitBtnDisabled {
+      background-color: #1f1f20;
+    }
+  }
+}
+
+
+
+
+

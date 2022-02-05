@@ -1,0 +1,35 @@
+@import "src/Common/Styles/sass/variables";
+@import './src/Common/Styles/sass/mixins';
+
+.worksBlock {
+  //min-height: 100vh;
+  height: 100%;
+  background-color: $bgColor;
+  padding: 50px 0 0;
+  .worksContainer {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .works {
+    //border: 1px solid;
+    width: 100%;
+    @include display(flex, space-between);
+    //display: flex;
+    //justify-content: space-between;
+    flex-wrap: wrap;
+    /*background-color: black;*/
+    box-sizing: border-box;
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 1250px) {
+    .works {
+      justify-content: center;
+    }
+  }
+}
+
+
+
+
