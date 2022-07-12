@@ -4,6 +4,7 @@ import Project from "./MyWork/Project";
 import Title from "../Common/component/title/Title";
 import store from "../Image/bookStore.jpg";
 import todo from "../Image/todo.jpg";
+import publishingPlatform from "../Image/publishingPlatform.jpg"
 
 const Projects = () => {
 
@@ -15,6 +16,9 @@ const Projects = () => {
         backgroundImage: `url(${todo})`
     }
 
+    const PublishingPlatform = {
+        backgroundImage: `url(${publishingPlatform})`
+    }
 
     return (
         <div id="projects" className={style.worksBlock}>
@@ -28,6 +32,10 @@ const Projects = () => {
                     <Project img={TodoList}
                              url={'https://igoravshtol.github.io/TodoList/'}
                              title={"TodoList"}
+                    />
+                    <Project img={PublishingPlatform}
+                             url={'https://init-app-alpha.vercel.app/'}
+                             title={"PublishingPlatform"}
                     />
                 </div>
             </div>

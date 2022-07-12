@@ -31,6 +31,7 @@
     .button {
       position: relative;
       top: 110px;
+      border-radius: 5px;
       @include text(12px, 1.8, 400);
       background-color: $primaryColor;
       padding: 10px 20px;

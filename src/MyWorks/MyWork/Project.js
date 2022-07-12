@@ -13,7 +13,6 @@ const Project = (props) => {
             </div>
             <div className={style.projectInfo}>
                 <h3>{props.title}</h3>
-                {/*<span className={style.description}>{props.discription}</span>*/}
             </div>
         </div>
     );
